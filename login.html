@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MidNight Serpent - Login</title>
+
+    <!---- Links ---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-overlay"></div>
+        <div class="login-box">
+            <div class="login-header">
+                <h2 class="login-title">Enter the <span class="text-crimson">Shadows</span></h2>
+                <p class="login-subtitle">Only the chosen may proceed</p>
+            </div>
+
+            <form action="login.php" method="POST" class="login-form">
+                <div class="form-group">
+                    <input type="text" name="username" class="form-control" placeholder="Username" required>
+                    <div class="input-underline"></div>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    <div class="input-underline"></div>
+                </div>
+                <button type="submit" class="btn btn-dark">
+                    <span class="btn-text">Unveil the Path</span>
+                    <span class="btn-icon">🔐</span>
+                </button>
+            </form>
+
+            <div class="login-footer">
+                <p>Not one of us? <a href="register.html" class="text-crimson">Seek Initiation</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!---- Scripts ---->
+    <script src="JS/script.js"></script>
+</body>
+</html>
